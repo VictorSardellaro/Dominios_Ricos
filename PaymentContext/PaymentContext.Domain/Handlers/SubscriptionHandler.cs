@@ -101,7 +101,7 @@ namespace PaymentContext.Domain.Handlers
             var name = new Name(command.FirstName, command.LastName);
             var document = new Document(command.Document, EDocumentType.CPF);
             var email = new Email(command.Email);
-            var address = new Address(command.Street, command.Number, command.Neighborhood, command.City, command.State, command.Country, command.Zipcode);
+            var address = new Address(command.Street, command.Number, command.Neighborhood, command.City, command.State, command.Country, command.ZipCode);
 
             // Gerar as Entidades
             var student = new Student(name, document, email);
